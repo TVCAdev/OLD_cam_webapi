@@ -32,7 +32,7 @@ def livingpic_get():
             if (ret == True):
                 # encode to base64 format for send on json format
                 b64_data = base64.b64encode(buffer)
-                return jsonify({'data': b64_data}), 200
+                return jsonify({'imgdata': b64_data}), 200
             else:
                 # error for encoding to jpg
                 return "Encode(JPG) Error", 500
