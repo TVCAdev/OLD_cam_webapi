@@ -1,0 +1,8 @@
+FROM docker_cam_webapi:latest
+
+ENV TOP_DIR /cam_webapi
+
+COPY camera.py ${TOP_DIR}
+
+CMD ["/usr/bin/python3","camera.py"]
+
